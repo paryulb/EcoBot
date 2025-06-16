@@ -41,21 +41,21 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-st.title("🌱 EcoBot")
+st.title("Welcome to EcoBot (Prototype)")
 st.subheader("Discover your perfect eco-friendly products 🌍")
 
 st.write("Let's personalize your sustainable lifestyle. Answer a few quick questions 💬")
 
 # Quiz
-skin_type = st.radio("1. What’s your skin type?", ["Oily", "Dry", "Sensitive", "Normal"])
+skin_type = st.radio("1. What’s your skin type?", ["Oily", "Dry", "Sensitive", "Combination"])
 preference = st.radio("2. What do you care about most?", ["Plastic-free items", "Acne control", "Hair nourishment"])
-routine = st.radio("3. What’s part of your daily routine?", ["Brushing", "Face wash", "Hair oiling"])
+routine = st.radio("3. What’s part of your daily routine?", ["Eco-Brushing", "Face wash", "Hair oiling"])
 
 # Recommendation logic
 if st.button("🔍 Show My Recommendation"):
     st.subheader("🎯 Recommended for You")
 
-    if "Plastic" in preference or "Brushing" in routine:
+    if "Plastic" in preference or "Eco-Brushing" in routine:
         rec = products[0]
     elif "Acne" in preference or "Face" in routine:
         rec = products[1]
@@ -69,4 +69,4 @@ if st.button("🔍 Show My Recommendation"):
     st.success("Going green never looked better 💚")
 
 st.markdown("---")
-st.caption("🚀 Built by EDC_Girlies | Powered by Streamlit")
+st.caption("🚀 Built by EDC_Girlies | IIM Jammu")
