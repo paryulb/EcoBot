@@ -65,7 +65,7 @@ if st.button("🔍 Show My Recommendation"):
     st.image(rec["image"], width=250)
     st.markdown(f"**{rec['name']}**  \n💰 *{rec['price']}*  \n📦 *{rec['category']}*")
     st.write(rec["description"])
-    st.markdown("[🛍️ View on EcoShop India](https://ecoshopindia.com)", unsafe_allow_html=True)
+    st.markdown("[🛍️ View on EcoShop India](https://ecoshopindia.in/?srsltid=AfmBOopalHohF7hMk6sJBlaoaYsrvwX_L6dQwkXWHdp7wMwsEY5Mi5vV)", unsafe_allow_html=True)
     st.success("Going green never looked better 💚")
 
 st.markdown("---")
